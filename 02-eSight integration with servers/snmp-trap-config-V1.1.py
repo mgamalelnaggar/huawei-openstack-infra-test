@@ -1,11 +1,6 @@
 import paramiko
 import time
 
-
-# ip_address=['10.51.92.3','10.51.92.4','10.51.92.5','10.51.92.50','10.51.92.51','10.51.92.52','10.51.92.53','10.51.92.54','10.51.92.6','10.51.92.7','10.51.92.8','10.51.92.9','10.51.92.10','10.51.92.11','10.51.92.14','10.51.92.15','10.51.92.16','10.51.92.17','10.51.92.18','10.51.92.25','10.51.92.26','10.51.92.27','10.51.92.28','10.51.92.29','10.51.92.30','10.51.92.33','10.51.92.34','10.51.92.35','10.51.92.70','10.51.92.71','10.51.92.72','10.51.92.73']
-
-#ip_address=['10.51.92.63','10.51.92.64','10.51.92.65','10.51.92.66','10.51.92.67','10.51.92.89','10.51.92.90','10.51.92.91','10.51.92.36','10.51.92.37','10.51.92.68','10.51.92.69','10.51.92.76','10.51.92.77','10.51.92.78','10.51.92.79']
-
 #######################
 esightip='10.55.49.133'
 ip_file='ibmc.txt'
@@ -32,47 +27,6 @@ for ip in ip_address:
 	
 	time.sleep(5)
 
-# Add new User "eSightMgmt"	
-'''
-	remote_conn.send('ipmcset -d adduser -v eSightMgmt')
-	remote_conn.send('\n')
-	time.sleep(2)
-	output = remote_conn.recv(65535)
-	print output
-'''
-# Add the Password
-'''
-	remote_conn.send('Changeme_123')
-	remote_conn.send('\n')
-	time.sleep(2)
-	output = remote_conn.recv(65535)
-	print output
-	
-	remote_conn.send('Changeme_123')
-	remote_conn.send('\n')
-	time.sleep(2)
-	output = remote_conn.recv(65535)
-	print output
-	
-	remote_conn.send('Changeme_123')
-	remote_conn.send('\n')
-	time.sleep(2)
-	output = remote_conn.recv(65535)
-	print output
-	time.sleep(1)
-'''
-# Adjust user priviledge
-'''
-	remote_conn.send('ipmcset -d privilege -v eSightMgmt 4')
-	remote_conn.send('\n')
-	time.sleep(1)
-	
-	remote_conn.send('Changeme_123')
-	remote_conn.send('\n')
-	time.sleep(2)
-	output = remote_conn.recv(65535)
-	print output
-'''
 # Configure SNMP trap parameters
 
 # Enable SNMP trap
