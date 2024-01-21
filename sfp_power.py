@@ -1,6 +1,6 @@
 #####################################
 # Mohamed Gamal El-Naggar           #
-# email: mgamal@eventumsolutions.com#
+# #
 #####################################
 
 import paramiko
